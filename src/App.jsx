@@ -1,11 +1,11 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import DashboardPreview from './components/DashboardPreview'
+import Showcase from './components/Showcase'
 import Services from './components/Services'
-import Guarantees from './components/Guarantees'
-import Story from './components/Story'
 import Process from './components/Process'
 import SystemInspector from './components/SystemInspector'
+import Story from './components/Story'
+import Guarantees from './components/Guarantees'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -16,12 +16,12 @@ export default function App() {
     <div className="bg-ink min-h-screen">
       <Nav />
       <Hero />
-      <DashboardPreview />
+      <Showcase />
       <Services />
-      <Guarantees />
-      <Story />
-      <SystemInspector />
       <Process />
+      <SystemInspector />
+      <Story />
+      <Guarantees />
       <FAQ />
       <Contact />
       <Footer />

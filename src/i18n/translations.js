@@ -1,14 +1,14 @@
 // All site copy in English and Somali, in one place.
 // NOTE: I'm not a native Somali speaker. The Somali text below is a solid,
-// meaning-accurate first pass, but have a native speaker skim it before
-// launch — especially the hero headline and FAQ, where natural phrasing
+// meaning-accurate pass, but have a native speaker skim it before launch —
+// especially the hero headline, showcase, and FAQ, where natural phrasing
 // matters most. Everything is plain text here, easy to hand-edit.
 
 export const translations = {
   en: {
     nav: {
       services: 'Services',
-      work: 'Work',
+      work: 'Systems',
       faq: 'FAQ',
       contact: 'Contact',
       startProject: 'Start a project',
@@ -17,29 +17,71 @@ export const translations = {
       badge: 'Hirgaliye — Somali for "the one who makes it real"',
       location: 'Jijiga, Ethiopia',
       reach: 'Serving clients worldwide',
-      headline1: 'Order is a feature,',
-      headline2: 'not an afterthought.',
+      headline1: 'We build the system',
+      headline2: 'your business actually needs.',
       paragraph:
-        "Tell us what you need — a website, an app, or a full system — and we build it professionally, organized from the database up, so it runs as clean as it looks.",
-      ctaPrimary: 'Message us on WhatsApp',
+        'Website, mobile app, or a complete business management system — designed around how your business actually works, from the first screen to the database underneath.',
+      ctaPrimary: 'Start a project',
       ctaSecondary: 'See what we build ↓',
-      branchLabels: ['HOTEL', 'HOSPITAL', 'SCHOOL', 'CAFÉ'],
     },
-    dashboard: {
-      eyebrow: "What you'd actually see",
-      title: 'One dashboard, whatever the business.',
-      note: 'Sample preview — built around your actual data',
-      items: [
-        { label: 'Room availability', value: 'Live', tag: 'HOTEL' },
-        { label: 'Orders in kitchen', value: '3 pending', tag: 'CAFÉ' },
-        { label: 'Student attendance', value: 'Synced daily', tag: 'SCHOOL' },
-        { label: 'Patient records', value: 'Access-controlled', tag: 'HOSPITAL' },
+    showcase: {
+      eyebrow: 'Systems we build',
+      title: 'Built around the way a business actually runs.',
+      subtitle:
+        'A look at the systems we build — restaurant, gym, and school management. Shown here with sample data; yours is built around your real numbers.',
+      statusLabels: {
+        live: 'Working demo',
+        progress: 'In progress',
+        planned: 'Planned',
+      },
+      note: 'Sample data — your system runs on your real numbers',
+      cta: 'Start a project',
+      projects: [
+        {
+          id: 'restaurant',
+          tag: 'RESTAURANT',
+          name: 'Restaurant system',
+          kicker: 'Restaurant & café management',
+          status: 'live',
+          stats: [
+            { label: "Today's sales", value: '18,450 Birr' },
+            { label: 'Orders', value: '127' },
+            { label: 'Profit', value: '7,630 Birr' },
+          ],
+          modules: ['Orders', 'Tables', 'Menu', 'Inventory', 'Expenses', 'Staff', 'Reports'],
+        },
+        {
+          id: 'gym',
+          tag: 'GYM',
+          name: 'Gym system',
+          kicker: 'Membership & check-in management',
+          status: 'progress',
+          stats: [
+            { label: 'Active members', value: '214' },
+            { label: 'Monthly revenue', value: '42,000 Birr' },
+            { label: 'Check-ins today', value: '89' },
+          ],
+          modules: ['Members', 'Subscriptions', 'Check-in', 'Payments', 'Trainers', 'Reports'],
+        },
+        {
+          id: 'school',
+          tag: 'SCHOOL',
+          name: 'School system',
+          kicker: 'Students, attendance & fees',
+          status: 'planned',
+          stats: [
+            { label: 'Students', value: '640' },
+            { label: 'Attendance', value: '96%' },
+            { label: 'Fees collected', value: '78%' },
+          ],
+          modules: ['Students', 'Attendance', 'Grades', 'Fees', 'Parents', 'Staff'],
+        },
       ],
     },
     services: {
       eyebrow: 'What we build',
-      title: 'One team, every system your business runs on.',
-      subtitle: 'Same clean architecture underneath, whatever the industry on top.',
+      title: 'One team. From a website to a full business system.',
+      subtitle: 'The same clean architecture underneath, whatever the industry on top.',
       items: [
         {
           tag: 'HOTEL',
@@ -75,12 +117,12 @@ export const translations = {
     },
     guarantees: [
       {
-        title: 'Database-first design',
-        desc: 'We model your data correctly before writing a single screen, so the system scales instead of getting rebuilt in a year.',
+        title: 'Built around your business',
+        desc: 'We map how you actually work before we build a single screen — the system fits your workflow, not the other way around.',
       },
       {
         title: 'You own everything',
-        desc: 'Full source code, full deployment access. No monthly subscription lock-in — nothing is held hostage after handoff.',
+        desc: 'Full source code and deployment access are yours. No monthly subscription, nothing held back after handoff.',
       },
       {
         title: 'Fixed scope, no surprises',
@@ -93,10 +135,10 @@ export const translations = {
     ],
     story: {
       eyebrow: 'Why Hirgaliye exists',
-      text: "Most small businesses in the region run on spreadsheets, notebooks, and memory. Hirgaliye exists to replace that with one clean system — built once, owned outright, and structured so it still makes sense a year from now.",
+      text: 'Most small businesses here still run on notebooks, spreadsheets, and memory. Hirgaliye replaces that with one clean system — built once, owned outright, and structured so it still makes sense a year from now.',
     },
     inspector: {
-      eyebrow: 'System architecture',
+      eyebrow: 'Under the hood',
       title: 'How we engineer each system.',
       subtitle:
         'Pick a domain. This is the same architectural thinking that goes into every project — the principles are fixed even when the industry changes.',
@@ -153,7 +195,7 @@ export const translations = {
     },
     process: {
       eyebrow: 'How it runs',
-      title: 'Four stages. Same order, every time.',
+      title: 'From an idea to a working system.',
       items: [
         { n: '01', title: 'Blueprint', desc: 'We map out exactly what your business needs — no guessing, no bloat.' },
         { n: '02', title: 'Build', desc: 'Clean, tested code, structured so it stays easy to change later.' },
@@ -192,10 +234,10 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "Let's talk",
-      title: "Tell us what you're building.",
-      text: "We work with clients everywhere — no office visit required. Send a message on WhatsApp and we'll reply with next steps, usually the same day.",
-      cta: 'Chat on WhatsApp',
+      eyebrow: "Let's build it",
+      title: 'Tell us about your business.',
+      text: "Send a message on WhatsApp — tell us what your business does and what's slowing it down. We reply with next steps, usually the same day.",
+      cta: 'Message us on WhatsApp',
     },
     commandMenu: {
       jumpTo: 'Jump to',
@@ -206,7 +248,7 @@ export const translations = {
   so: {
     nav: {
       services: 'Adeegyada',
-      work: 'Shaqada',
+      work: 'Systemyada',
       faq: "Su'aalaha",
       contact: 'Xiriirka',
       startProject: 'Bilow mashruuc',
@@ -215,29 +257,71 @@ export const translations = {
       badge: 'Hirgaliye — kan wax dhabta u dhiga',
       location: 'Jijiga, Itoobiya',
       reach: 'U adeegna macaamiisha adduunka oo dhan',
-      headline1: 'Systemku waa sifo,',
-      headline2: 'ma aha wax lagu daro dabadeed.',
+      headline1: 'Waxaan kuu dhisnaa systemka',
+      headline2: 'ganacsigaagu runtii u baahan yahay.',
       paragraph:
-        'Noo sheeg waxa aad u baahan tahay — website, app, ama system buuxa — waana ku dhisaynaa si xirfad leh, laga bilaabo qaab-dhismeedka xogta ilaa dushiisa, si uu u shaqeeyo si nadiif ah sida uu u eg yahay.',
-      ctaPrimary: 'Nagala soo xiriir WhatsApp',
+        'Website, app mobile ah, ama system buuxa oo maamulka ganacsiga — waxaan u dhisnaa si waafaqsan sida ganacsigaagu dhab ahaan u shaqeeyo, laga bilaabo shaashadda ugu horreysa ilaa database-ka hoose.',
+      ctaPrimary: 'Bilow mashruuc',
       ctaSecondary: 'Eeg waxa aan dhisno ↓',
-      branchLabels: ['HUDHEEL', 'ISBITAAL', 'DUGSI', 'KAFITEERIYA'],
     },
-    dashboard: {
-      eyebrow: 'Waxa aad dhab ahaan arki lahayd',
-      title: 'Hal dashboard, ganacsi kastoo uu yahay.',
-      note: 'Tusaale muujin ah — loo dhisay xogtaada dhabta ah',
-      items: [
-        { label: 'Qolalka banaan', value: 'Firfircoon', tag: 'HUDHEEL' },
-        { label: 'Dalabka jikada', value: '3 sugaya', tag: 'KAFITEERIYA' },
-        { label: 'Imaanshaha ardayda', value: 'Maalin walba la cusboonaysiiyo', tag: 'DUGSI' },
-        { label: 'Diiwaanka bukaanka', value: 'Gelitaan xakameysan', tag: 'ISBITAAL' },
+    showcase: {
+      eyebrow: 'Systemyada aan dhisno',
+      title: 'Loo dhisay sida ganacsigu dhab ahaan u shaqeeyo.',
+      subtitle:
+        'Muuqaal ka mid ah systemyada aan dhisno — maamulka maqaayadda, gym, iyo dugsi. Halkan waxaa lagu tusayaa xog tijaabo ah; kaaga waxaa loo dhisaa tirooyinkaaga dhabta ah.',
+      statusLabels: {
+        live: 'Tusaale shaqaynaya',
+        progress: 'Socda',
+        planned: 'La qorsheeyay',
+      },
+      note: 'Xog tijaabo ah — systemkaagu wuxuu ku shaqeeyaa tirooyinkaaga dhabta ah',
+      cta: 'Bilow mashruuc',
+      projects: [
+        {
+          id: 'restaurant',
+          tag: 'MAQAAYAD',
+          name: 'Systemka maqaayadda',
+          kicker: 'Maamulka maqaayadda & kafitariya',
+          status: 'live',
+          stats: [
+            { label: 'Iibka maanta', value: '18,450 Birr' },
+            { label: 'Dalabyada', value: '127' },
+            { label: "Faa'iidada", value: '7,630 Birr' },
+          ],
+          modules: ['Dalabyada', 'Miisaska', 'Menu-ka', 'Kaydka', 'Kharashaadka', 'Shaqaalaha', 'Warbixinno'],
+        },
+        {
+          id: 'gym',
+          tag: 'GYM',
+          name: 'Systemka gym-ka',
+          kicker: 'Xubinnimo & diiwaan-gelin',
+          status: 'progress',
+          stats: [
+            { label: 'Xubnaha firfircoon', value: '214' },
+            { label: 'Dakhliga bishii', value: '42,000 Birr' },
+            { label: "Soo-gelitaan maanta", value: '89' },
+          ],
+          modules: ['Xubnaha', 'Rukhsadaha', 'Soo-gelin', 'Lacag-bixin', 'Tababarayaal', 'Warbixinno'],
+        },
+        {
+          id: 'school',
+          tag: 'DUGSI',
+          name: 'Systemka dugsiga',
+          kicker: 'Arday, imaansho & lacago',
+          status: 'planned',
+          stats: [
+            { label: 'Ardayda', value: '640' },
+            { label: 'Imaanshaha', value: '96%' },
+            { label: 'Lacagaha la aruuriyay', value: '78%' },
+          ],
+          modules: ['Ardayda', 'Imaanshaha', 'Buundooyinka', 'Lacagaha', 'Waalidiinta', 'Shaqaalaha'],
+        },
       ],
     },
     services: {
       eyebrow: 'Waxa aan dhisno',
-      title: 'Hal kooxi, dhammaan systemyada ganacsigaagu ku shaqeeyo.',
-      subtitle: 'Isla qaab-dhismeed nadiif ah oo hoose, si kastoo warshaduhu kala duwan tahay.',
+      title: 'Hal koox. Website ilaa system buuxa.',
+      subtitle: 'Isla qaab-dhismeed nadiif ah oo hoose, warshad kastoo aad tahayba.',
       items: [
         {
           tag: 'HUDHEEL',
@@ -273,28 +357,28 @@ export const translations = {
     },
     guarantees: [
       {
-        title: 'Naqshadaynta database-ga marka hore',
-        desc: 'Waxaan si sax ah u qaabeynaa xogtaada ka hor inta aanan qorin hal shaashad, si systemku u koro halkii uu isku dhisi lahaa sanad kadib.',
+        title: 'Loo dhisay ganacsigaaga',
+        desc: 'Waxaan fahamnaa sida aad dhab ahaan u shaqayso ka hor inta aanan dhisin hal shaashad — systemku wuxuu la jaanqaadaa hab-shaqeedkaaga, ma aha lidkeeda.',
       },
       {
-        title: 'Adiga baad wax walba leedahay',
-        desc: 'Code-ka buuxa, gelitaanka bandhigidda oo buuxa. Ma jiro xiritaan rukhsad bille ah — waxba dib looma haysto kadib marka aan kuu wareejino.',
+        title: 'Adiga ayaa leh wax walba',
+        desc: 'Code-ka buuxa iyo gelitaanka deployment-ka adigaa iska leh. Ma jiro lacag bille ah, waxbana dib looma hayo marka lagu soo gudbiyo.',
       },
       {
-        title: "Baaxad go'an, lama filaan ma jiro",
-        desc: "Waad ogtahay qiimaha iyo waxa la bixin doono ka hor intaan shaqadu bilaabmin — mana aha kadib.",
+        title: "Qiime go'an, lama filaan ma jiro",
+        desc: 'Waad ogtahay qiimaha iyo waxa la keeni doono ka hor inta aan shaqadu bilaaban — ma aha kadib.',
       },
       {
-        title: 'Xiriir toos ah, wax dhexdhexaadin ah ma jiraan',
-        desc: 'Waxaad la hadli doontaa qofka dhab ahaan dhisaya systemkaaga, laga bilaabo fariinta ugu horeysa ilaa bilowga.',
+        title: 'Xiriir toos ah, dhexdhexaadiye ma jiro',
+        desc: 'Waxaad si toos ah ula xiriirtaa qofka dhab ahaan dhisaya systemkaaga, fariinta ugu horreysa ilaa hirgelinta.',
       },
     ],
     story: {
       eyebrow: 'Sababta Hirgaliye u jirto',
-      text: "Inta badan ganacsiyada yaryar ee gobolka waxay ku shaqeeyaan liisas, buugaag, iyo xasuus. Hirgaliye waxay u jirtaa inay ku beddesho hal system oo nadiif ah — oo hal mar la dhisay, gebi ahaanba la leeyahay, oo si loo qaabeeyay in ay wali macno samaynayso hal sano kadib.",
+      text: 'Ganacsiyo badan oo halkan ka jira weli waxay ku shaqeeyaan buugag, Excel, iyo xasuus. Hirgaliye waxay taas ku beddeshaa hal system oo nadiif ah — hal mar la dhiso, adiga oo gebi ahaan iska leh, oo loo qaabeeyay in uu wali macno samaynayo sanad kadib.',
     },
     inspector: {
-      eyebrow: 'Qaab-dhismeedka systemka',
+      eyebrow: 'Waxa gudaha ka jira',
       title: 'Sida aan u dhisno system kasta.',
       subtitle:
         "Dooro qayb. Kani waa isla fikirka qaab-dhismeed ee ku jira mashruuc kasta — mabaadi'da way isku mid yihiin xitaa markay warshaduhu isbeddesho.",
@@ -319,7 +403,7 @@ export const translations = {
           stack: ['Xakameynta gelitaanka ku salaysan doorka', 'Xogta sirta ah marka ay xasilloonaato', 'Diiwaan-gelin baaritaan oo qaab-dhismeed leh'],
           principles: [
             'Diiwaan kastaa wuxuu leeyahay mid u iska leh iyo heer ogolaansho — waxba si toos ah furan ma aha.',
-            "Ballanka, shaqaalaha, iyo xogta bukaanka si gooni ah ayaa loo qaabeeyaa si khalad hal meel ah uusan u faafin.",
+            'Ballanka, shaqaalaha, iyo xogta bukaanka si gooni ah ayaa loo qaabeeyaa si khalad hal meel ah uusan u faafin.',
             'Isbeddel kastaa waxaa lagu diiwaan geliyaa cidda, waxa, iyo goorta — wax beddelka aamusan ma jiro.',
           ],
         },
@@ -351,7 +435,7 @@ export const translations = {
     },
     process: {
       eyebrow: 'Sida ay u socoto',
-      title: 'Afar marxaladood. Isla nidaam, mar walba.',
+      title: 'Laga bilaabo fikrad ilaa system shaqaynaya.',
       items: [
         { n: '01', title: 'Qorshaynta', desc: 'Waxaan si sax ah u qeexnaa waxa ganacsigaagu u baahan yahay — male-awaal ma jiro, wax dheeraad ahna ma jiraan.' },
         { n: '02', title: 'Dhisidda', desc: 'Code nadiif ah oo la tijaabiyay, oo loo qaabeeyay si uu u sii fududaado in dib loo beddelo.' },
@@ -360,7 +444,7 @@ export const translations = {
       ],
     },
     faq: {
-      eyebrow: 'Su\'aalaha guud',
+      eyebrow: "Su'aalaha guud",
       title: 'Ka hor inta aadan nala soo xiriirin.',
       items: [
         {
@@ -385,15 +469,15 @@ export const translations = {
         },
         {
           q: 'Ma dhisi kartaa wax ka baxsan warshadahaan?',
-          a: "Haa — hudheellada, maqaayadaha, dugsiyada, iyo isbitaalada ayaa ah diirada aan saarnahay, laakiin isla habka qaab-dhismeedka ayaa ku dabaqsan inta badan systemyada ganacsiga. Na weydii.",
+          a: 'Haa — hudheellada, maqaayadaha, dugsiyada, iyo isbitaalada ayaa ah diirada aan saarnahay, laakiin isla habka qaab-dhismeedka ayaa ku dabaqsan inta badan systemyada ganacsiga. Na weydii.',
         },
       ],
     },
     contact: {
-      eyebrow: 'Aan wada hadalno',
-      title: 'Noo sheeg waxa aad dhisaysid.',
-      text: 'Waxaan la shaqaynaa macaamiisha meel kasta — booqasho xafiis looma baahna. Noo soo dir fariin WhatsApp waxaana kugu jawaabi doonaa tallaabooyinka xiga, badanaa isla maalinta.',
-      cta: 'Kula sheekayso WhatsApp',
+      eyebrow: 'Aan dhisno',
+      title: 'Noo sheeg wax ku saabsan ganacsigaaga.',
+      text: 'Noo soo dir fariin WhatsApp — noo sheeg waxa ganacsigaagu qabto iyo waxa hor istaagaya. Waxaan kuugu soo celinaa tallaabooyinka xiga, badanaa isla maalinta.',
+      cta: 'Nagala soo xiriir WhatsApp',
     },
     commandMenu: {
       jumpTo: 'U gudub',

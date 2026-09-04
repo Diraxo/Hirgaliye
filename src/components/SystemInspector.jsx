@@ -20,7 +20,7 @@ export default function SystemInspector() {
   const active = capabilities.find((c) => c.id === activeId) ?? capabilities[0]
 
   return (
-    <section id="work" className="relative py-28 md:py-36 border-t border-line">
+    <section id="how" className="relative py-28 md:py-36 border-t border-line">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <p className="font-mono text-xs tracking-[0.3em] text-violet mb-3">{t.inspector.eyebrow.toUpperCase()}</p>
         <h2 className="font-display text-3xl md:text-4xl font-semibold text-paper max-w-lg mb-4">
