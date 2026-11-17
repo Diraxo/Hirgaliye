@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-teal" />
           <span className="font-mono text-xs tracking-[0.15em] text-muted">
-            {siteConfig.brand.toUpperCase()} — © {new Date().getFullYear()}
+            © 2026 Hirgaliye — A division of Ildheer Tech (Registered in Somali Region, Ethiopia).
           </span>
         </div>
         <div className="flex items-center gap-5">

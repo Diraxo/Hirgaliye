@@ -51,6 +51,9 @@ export default function Contact() {
           <MessageCircle size={18} />
           {c.cta}
         </motion.a>
+        <p className="text-muted text-sm max-w-lg mx-auto mt-10 leading-relaxed">
+          Hirgaliye is operated by Ildheer Tech, an ICT consultancy and software engineering firm based in Jigjiga, Ethiopia.
+        </p>
       </div>
     </section>
   )
